@@ -63,7 +63,7 @@
                 <label w="100%" color="bb8844ff" onclick='downloadPlugin("https://raw.githubusercontent.com/digitalgust/plugin4minijvm/main/plugins/ExApp.jar")'>GET IT</label>
             </td>
             <td w="90" h="90" align="hcenter,vcenter">
-                <img border="1" w="70" h="70" src="https://raw.githubusercontent.com/digitalgust/plugin4minijvm/main/plugins/ExApp.jar!/res/hello.png"/>
+                <img border="1" w="70" h="70" src="jar://https://raw.githubusercontent.com/digitalgust/plugin4minijvm/main/plugins/ExApp.jar!/res/hello.png"/>
             </td>
         </tr>
         <tr w="100%">
@@ -101,7 +101,7 @@
                 <label w="100%" color="bb8844ff" onclick='downloadPlugin("https://raw.githubusercontent.com/digitalgust/plugin4minijvm/main/plugins/ExGame.jar")'>GET IT</label>
             </td>
             <td w="90" h="90" align="hcenter,vcenter">
-                <img border="1" w="70" h="70" src="https://raw.githubusercontent.com/digitalgust/plugin4minijvm/main/plugins/ExGame.jar!/res/fern.png"/>
+                <img border="1" w="70" h="70" src="jar://https://raw.githubusercontent.com/digitalgust/plugin4minijvm/main/plugins/ExGame.jar!/res/fern.png"/>
             </td>
         </tr>
         <tr w="100%">
