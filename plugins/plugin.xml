@@ -1,0 +1,126 @@
+<viewport name="PLUGIN_HOME" w="100%" h="100%" oninit="onload()">
+    <script>
+        <![CDATA[
+
+        sub onload()
+            setPreIconColor("DIS_PLUGIN","ff000099")
+        ret
+
+        sub search()
+        ret
+
+        sub downloadPlugin(url)
+            if(strlen(url)= 0)
+               ret
+            eif
+            showMsg("Downloading...")
+            downloadInstall(url,"PLUGIN_HOME.downCallback")
+        ret
+
+        sub downCallback(url,code,filepath)
+            if(code = 0)
+                showMsg("Downloaded and install success")
+                ret
+            eif
+            showMsg("Download failed")
+        ret
+
+        ]]>
+    </script>
+    <label w="100%" h="30" fontsize="20" align="hcenter,vcenter">Plugin Download</label>
+    <br></br>
+    <table w="100%" h="80">
+        <tr w="100%" h="5">
+            <td></td>
+        </tr>
+        <tr w="100%" h="35">
+            <td w="float" h="100%">
+                <input name="DIS_SEARCH_IN" w="100%" h="100%" style="search" hint="Search plugin online"></input>
+            </td>
+            <td w="40" h="100%">
+                <button name="DIS_SEARCH_SUBMIT" w="40" h="100%" onclick="search()" preicon="🔍"></button>
+            </td>
+        </tr>
+    </table>
+    <panel w="100%" h="5"></panel>
+
+    <table name="ExApp" w="100%">
+        <tr w="100%" h="10">
+            <td w="100%" h="100%">
+            </td>
+        </tr>
+        <tr w="100%">
+            <td w="float">
+                <label color="6666aaff" fontsize="20" h="30" align="left,top">ExApp</label>
+                <br/>
+                <label h="20" fontsize="14" align="left,top">1.0.4</label>
+                <br/>
+                <label h="20" fontsize="14" align="left,top">Size: 40K</label>
+                <br/>
+                <label h="20" fontsize="14" align="left,top">2025-02-25</label>
+            </td>
+            <td w="60" h="90" align="hcenter,vcenter">
+                <label w="100%" color="bb8844ff" onclick='downloadPlugin("https://raw.githubusercontent.com/digitalgust/plugin4minijvm/main/plugins/ExApp.jar")'>GET IT</label>
+            </td>
+            <td w="90" h="90" align="hcenter,vcenter">
+                <img border="1" w="70" h="70" src="https://raw.githubusercontent.com/digitalgust/plugin4minijvm/main/plugins/ExApp.jar?res/hello.png"/>
+            </td>
+        </tr>
+        <tr w="100%">
+            <td w="100%" align="left,top">
+                <label w="100%" fontsize="14" multiline="1" align="left,top">Description: Mobile app develop example.
+                    you can upgrade it.
+                </label>
+            </td>
+        </tr>
+        <tr w="100%" h="10">
+            <td w="100%" h="100%">
+            </td>
+        </tr>
+        <tr w="100%" h="2">
+            <td w="100%" h="2" bgcolor="88888820">
+            </td>
+        </tr>
+    </table>
+    <table name="ExGame" w="100%">
+        <tr w="100%" h="10">
+            <td w="100%" h="100%">
+            </td>
+        </tr>
+        <tr w="100%">
+            <td w="float">
+                <label color="6666aaff" fontsize="20" h="30" align="left,top">ExGame</label>
+                <br/>
+                <label h="20" fontsize="14" align="left,top">1.0.4</label>
+                <br/>
+                <label h="20" fontsize="14" align="left,top">Size: 659K</label>
+                <br/>
+                <label h="20" fontsize="14" align="left,top">2025-02-25</label>
+            </td>
+            <td w="60" h="90" align="hcenter,vcenter">
+                <label w="100%" color="bb8844ff" onclick='downloadPlugin("https://raw.githubusercontent.com/digitalgust/plugin4minijvm/main/plugins/ExGame.jar")'>GET IT</label>
+            </td>
+            <td w="90" h="90" align="hcenter,vcenter">
+                <img border="1" w="70" h="70" src="https://raw.githubusercontent.com/digitalgust/plugin4minijvm/main/plugins/ExGame.jar?res/fern.png"/>
+            </td>
+        </tr>
+        <tr w="100%">
+            <td w="100%" align="left,top">
+                <label w="100%" fontsize="14" multiline="1" align="left,top">Description: Mobile app develop example.
+                    you can upgrade it.
+                </label>
+            </td>
+        </tr>
+        <tr w="100%" h="10">
+            <td w="100%" h="100%">
+            </td>
+        </tr>
+        <tr w="100%" h="2">
+            <td w="100%" h="2" bgcolor="88888820">
+            </td>
+        </tr>
+    </table>
+
+
+    <panel w="100%" h="5"></panel>
+</viewport>
